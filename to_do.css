@@ -1,0 +1,236 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* body::before{
+    content: "";
+    position: relative;
+    background-image: url("./imgs/bg2.jpg");
+    width: 100vw;
+    height: 100vh;
+} */
+body{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.main{
+    background-image: url("./imgs/bg2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 50px;
+}
+
+h1{
+    font-size: 4rem;
+    color:black;
+}
+
+/* .main::before{
+    content: "";
+    position: absolute;
+    background-image: url("./imgs/bg2.jpg");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 0.6;
+} */
+
+.to_do{
+    border: 1px solid black;
+    width: 400px;
+    /* height: 400px; */
+    /* overflow-y: scroll; */
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.54);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.to_do .btn1,.input1{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 0.9rem;
+
+}
+.to_do .btn4{
+    background-color: red;
+    padding: 8px;
+    color: white;
+    align-self: center;
+    width: 180px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.to_do .btn1{
+    width: 180px;
+    align-self: center;
+    background-color: black;
+    color: white;
+    /* border: 1px solid white; */
+    font-size: 0.9rem;
+}
+
+.list ol li{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin-bottom: 25px;
+    margin-top: 15px;
+    font-size: 1rem;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding-bottom: 5px;
+    
+
+}
+.list{
+    padding: 20px;
+    margin: 5px;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.611);
+    overflow-y: scroll;
+    
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.list ol li p{
+    font-size: 1.3rem;
+    margin-right: 30px;
+}
+
+.list ol li .btn3{
+    background-color: black;
+    color: white;
+    height: 40px;
+    width: 90px;
+    padding: 5px;
+    border-radius: 20px;
+    /*align-self: flex-end;
+    */
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.list ol li .btn2{
+    background-color: red;
+    height: 40px;
+    width: 90px;
+    color: white;
+    margin-right: 5px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.list ol li div{
+    display: flex;
+    flex-direction: row;
+}
+
+.checked{
+    text-decoration: line-through;
+
+}
+
+ol .n{
+    color: white;
+    font-size: 1.5rem;
+    margin:50px
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1{
+        color: black;
+        font-size: 2.5rem;
+    }
+
+    .to_do{
+        width: 90vw;
+    }
+    .to_do input{
+        font-size: 13px;
+    }
+
+    .to_do .btn1{
+        width: 150px;
+    }
+    .to_do .btn4{
+        width: 150px;
+    }
+
+    .list{
+        width: 95vw;
+    }
+    .list ol li p{
+        font-size:15px;
+    }
+    .list ol li div {
+       flex-direction: column;
+    }
+    .list ol li div .btn2{
+        height: 28px;
+        width: 60px;
+        margin: 3px;
+        font-size: 13px;
+        padding: 0px;
+    }
+    .list ol li div .btn3{
+        height: 28px;
+        width: 60px;
+        margin: 3px;
+        font-size: 10px;
+        padding: 0px;
+    }
+    .list ol li{
+        padding: 2px;
+    }
+   .list{
+    padding: 6px;
+    padding-left: 10px;
+    padding-right: 10px;
+   }
+
+  }
+
+  button:hover{
+    border: 1px solid white;
+  }
